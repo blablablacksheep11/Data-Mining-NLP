@@ -4,6 +4,12 @@ import html
 import emoji
 import nltk
 
+# Download required NLTK resources
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('averaged_perceptron_tagger_eng', quiet=True)
+
 from unidecode import unidecode
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
